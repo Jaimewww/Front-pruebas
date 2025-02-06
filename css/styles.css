@@ -1,0 +1,25 @@
+.linea {
+    border: 0;
+    padding: 1px;
+    margin: 10px;
+    background-color: #FCB9AA;
+}
+
+h1 {
+            color: #FCB9AA;
+            font-family: Arial, sans-serif;
+            font-size: 3em;
+            text-align: center;
+
+}
+
+body {
+        background: #ECEAE4;
+}
+
+.parrafo{
+        color: #FF968A;
+        font-family: Times New Roman, sans-serif;
+        font-size: 1em;
+        text-align: left;
+}
