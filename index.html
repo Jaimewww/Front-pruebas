@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lili y Yo</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
 <header>
@@ -15,7 +16,7 @@
     <div class="main-container">
         <div class="container">
             <h2 class="subtitle">💘 Como conocí a Lili</h2>
-            <p class="content">Todo empezó en Septiembre de 2023,</p>
+            <p class="content">En <strong class="negrita">septiembre del 2023</strong> mi vida dio un giro muy inesperado, <strong>conocí a Lili</strong>, tal vez no de la mejor manera, pero ese día mi vida cambió para siempre. No me esperaba que ese <strong>27 de septiembre</strong> iba a conocer a alguien como Lili, cuando <strong>la vi a los ojos</strong> sentí algo tan especial y único, después de ese día quise saber más de ella y me empecé a enamorar cada vez más. Recuerdo que nuestra primera <strong>cita</strong> seria fue en noviembre cuando fuimos a pasear en Jipiro y la pasamos tan bonito, ahí supe que estaba <strong>verdaderamente enamorado</strong>, ella me dio la paz que nunca antes había tenido.</p>
             <div class="imageCont">
                 <video id="video" width="300" height="300" style="border-radius: 50%;" controls>
                     <source src="videos/video_1.mp4" type="video/mp4">
@@ -25,9 +26,78 @@
         </div>
         <div class="container">
             <h2 class="subtitle">💘 ¿Por qué me enamoré de Lili?</h2>
-            <p class="content">PORQUEE</p>
+            <p class="content">Lili llegó cómo un <strong>ángel</strong> a mi vida, en un momento en el que sentía que no podía confiar en nadie y que con todo lo que había crecido se estaba derrumbando, ella me ayudó a <strong>levantarme</strong> de la situación en la que estaba, aunque tal vez no lo haya notado. Cada día que nos veíamos nos fuimos conociendo más, y a pesar de no tener ni de cerca los mismos gustos compartimos algo muy <strong>especial</strong>, pudimos encontrar en el otro una persona en la cual <strong>apoyarnos</strong> y que siempre estará ahí, además de aprender uno del otro con todo lo que el concepto de <strong>amor</strong> conlleva; con sus momentos felices y sobre todo los momentos difíciles 💗.</p>
+            <img class="imageCont" src="images/LiliYYo.jpg" alt="Lili y Yo">
+        </div>
+        <div class="container long">
+            <h2 class="subtitle">💌 ¿Qué significa Lili para mí?</h2>
+            <p class="content">Lili para mí significa <strong>amiga</strong>, <strong>pareja</strong>, <strong>compañera</strong>, <strong>amor</strong>, <strong>vida</strong>... Es imposible explicar con <strong>palabras</strong> todo lo que me ha enseñado durante todo este tiempo, lo que más aprecio de ella es el tipo de <strong>persona</strong> que es, ese <strong>corazón</strong> tan grande que tiene, esa forma de <strong>amar</strong>, ella puede ver <strong>belleza</strong> en cada detalle, en una <strong>planta</strong>, en un <strong>paisaje</strong>, en una <strong>salida</strong>, en <strong>mí</strong>.</p>
+            <img class="imageCont large" src="images/mainImage.jpg" alt="Imagen Principal">
+
+        </div>
+        <div class="container">
+            <h2 class="subtitle">💫 ¿Qué es lo que más le gusta a Lili?</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Categorías</button>
+                <div class="dropdown-content">
+                    <a href="#musica">🎶 Canción Favorita</a>
+                    <a href="#comida">🌷 Color Favorito</a>
+                    <a href="#viajes">🎴 Tipo de Citas</a>
+                    <a href="#serie">🎞️ Serie favorita</a>
+                </div>
+            </div>
+            <div id="musica" style="width: 100%; height: 100%;">
+                <h3 class="secsubtitle">🎶 Canción Favorita</h3>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0aV5uARAknQgYhBaK944FP?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div id="comida" style="display:none;">
+                <h3 class="secsubtitle">🌷 Color Favorito</h3>
+                <p class="content">Lili ama el color <strong>rosado</strong>.</p>
+                <div id="favcolor"></div>
+            </div>
+            <div id="viajes" style="display:none;">
+                <h3 class="secsubtitle">🎴 Tipo de Citas</h3>
+                <p class="content">Lili disfruta ir a <strong>cafeterías</strong> a hablar y estar tranquila, suele pedir <strong>postres</strong> o comida ligera, aprecia mucho la <strong>vista</strong> del lugar y le gusta tomarse <strong>fotos</strong> si es lindo :). Aunque también le gusta cualquier plan que incluya hacer algo <strong>diferente</strong>, como cuando fuimos a la feria o a vueltear por <strong>Jipiro</strong>.</p>
+                <img class="imageCont" src="images/date.jpg" alt="Artes vivas">
+            </div>
+            <div id="serie" style="display:none;">
+                <h3 class="secsubtitle">🎞️ Serie favorita</h3>
+                <p class="content">La serie favorita de Lili es <strong>Bojack Horseman</strong>, siempre la mira en su tiempo libre y la pone de fondo para hacer cualquier cosa :p, ya la ha visto alrededor de 7 veces</p>
+                <img class="imageCont" src="images/bojack.gif" alt="Bojack Horseman GIF">
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="subtitle"> Video Sobre Nosotros</h2>
             <div class="imageCont">
-                <img>
+                <video id="video2" width="300" height="300" style="border-radius: 50%;" controls>
+                    <source src="videos/VideoLiliyYo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <button class="video" onclick="playVideo2()">Reproducir video</button>
+        </div>
+        <div class="gallery-container">
+            <h2 class="subtitle">📸 Galería de Fotos</h2>
+            <div class="gallery">
+                <img src="images/galeria1.jpg" alt="Foto 1" class="gallery-item">
+                <img src="images/galeria2.jpg" alt="Foto 2" class="gallery-item">
+                <img src="images/galeria3.jpg" alt="Foto 3" class="gallery-item">
+                <img src="images/galeria4.jpg" alt="Foto 4" class="gallery-item">
+                <img src="images/galeria5.png" alt="Foto 5" class="gallery-item">
+                <img src="images/galeria6.png" alt="Foto 6" class="gallery-item">
+                <img src="images/galeria7.png" alt="Foto 7" class="gallery-item">
+                <img src="images/galeria8.png" alt="Foto 8" class="gallery-item">
+                <img src="images/galeria9.png" alt="Foto 9" class="gallery-item">
+                <img src="images/galeria10.png" alt="Foto 10" class="gallery-item">
+                <img src="images/galeria11.jpg" alt="Foto 11" class="gallery-item">
+                <img src="images/galeria12.jpg" alt="Foto 12" class="gallery-item">
+                <img src="images/galeria13.jpg" alt="Foto 13" class="gallery-item">
+                <img src="images/galeria14.jpg" alt="Foto 14" class="gallery-item">
+                <img src="images/galeria15.jpg" alt="Foto 15" class="gallery-item">
+                <img src="images/galeria16.jpg" alt="Foto 16" class="gallery-item">
+            </div>
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img">
             </div>
         </div>
     </div>

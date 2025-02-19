@@ -31,14 +31,25 @@ header h1 {
     position: relative;
     border: 5px solid #FF968A;
     border-radius: 20px;
-    width: 95vh;
+    width: 94vh;
     padding: 10px;
     background-color: #FFCCB6;
     margin: 10px;
+    transition-duration: 1s;
+    transition-property: scale, box-shadow;
+}
+
+.container:hover{
+    scale: 1.03;
+    box-shadow: 0 0 10px #FCB9CC;
 }
 
 .container:first-child {
     margin-right: -10px;
+}
+
+.container.long{
+    width: 200vh;
 }
 
 
@@ -51,15 +62,25 @@ header h1 {
     text-align: center;
 }
 
+.secsubtitle{
+    margin: 5px;
+    color: #FF968A;
+    font-family: 'Lucida Handwriting', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
 /* Content Styles */
 .content {
-    color: #8D8A87;
+    color: #c27168;
     font-family: 'Verdana', sans-serif;
     font-size: 1em;
-    display: flex;
+    display: block;
     justify-content: left;
     align-items: center;
 }
+
 
 /* Image Styles */
 .imageCont {
@@ -69,11 +90,18 @@ header h1 {
     height: 300px;
     border-radius: 50%;
     border: 5px solid #FF968A;
-    transition: transform 0.3s ease; /* Añade una transición suave */
+    transition: transform 1s ease;
+    transition-timing-function: ease;
+}
+
+.imageCont.large{
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
 }
 
 .imageCont:hover {
-    transform: scale(1.1); /* Agranda la imagen un 10% */
+    transform: scale(1.1);
 }
 
 .imageCont video {
@@ -95,8 +123,157 @@ header h1 {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition-property: scale;
 }
 
 .video:hover {
     background-color: #FCB9AA;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #FF968A;
+    color: white;
+    padding: 10px 40vh;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #FCB9AA;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFCCB6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FCB9AA;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+#musica{
+    margin: 10px;
+}
+
+iframe {
+    width: 95.2%;
+    height: 95.2%;
+    border: none;
+}
+
+#comida{
+    margin: 10px;
+}
+
+#viajes{
+    margin: 10px;
+}
+
+#favcolor {
+    width: 50vh;
+    height: 100px;
+    background-color: pink;
+    border-radius: 10px;
+    border: 3px #FF968A solid;
+    margin: 10px auto;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Gallery Styles */
+.gallery-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
